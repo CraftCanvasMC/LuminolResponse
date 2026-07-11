@@ -5,7 +5,7 @@ currently this document is primarily written by Dueris
 
 # AboutCanvas response
 
-[communitypng](/assets/community.png)
+![communitypng](/assets/community.png)
 
 To start off, the images provided in this screenshot are of ages ago, of which have been resolved because we removed the
 related statement from our documentation. I cant really show proof that we discussed this since the discord got deleted
