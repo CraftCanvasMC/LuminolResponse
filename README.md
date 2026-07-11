@@ -147,7 +147,7 @@ Requesting the "immediate removal" of our repository for a dispute that could be
 To address a few comments in one of our issue reports discussing this:
 - Luminol did not reach out to Canvas at all actually, WE reached out to them. As evident by Shiroha. They reached out
 one maybbe 2 times(to the best of my knowledge at the time of writing this) in a PR regarding async protocol switch which
-was fixed later on and about a patch commit I did recently but I fixed that one a few hours later
+was fixed later on and about a patch commit I did a few months back but I fixed that one a few hours later
 - I did acknowledge my mistakes and then fixed them ASAP. As evident by Shiroha
 - We do contain license notices for projects, which doesnt mean anything really, but it is more to show that we are trying
 to show that we are trying to make an effort at showcasing our origins for patches and our contributors. I simply forgot
