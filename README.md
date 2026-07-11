@@ -168,6 +168,15 @@ not steal anything from anyone, and did not mean any malicious intent by anythin
 heavily out of porportion that it resulted in 2 communities at eachothers throats for something that could be settled
 privately within an hour.
 
+Proof we are already doing things to fix:
+
+- https://github.com/CraftCanvasMC/Canvas/pull/288
+- https://github.com/CraftCanvasMC/Canvas/commit/3b5289569fb6ad84752acc7622f655cb538be5d0
+
+I think it's worth noting this was merged within like 20 minutes of this repo being public... I think that sorta shows
+that we are very willing to fix these issues. A more in-depth review will be conducted later, but at the time of writing
+I need to go drive home.
+
 On behalf of the CanvasMC team, we are genuinely sad to see Luminol leave. We meant no competition with them, I dont
 want competition with anyone. We all have the same goal, to optimize and stabilize Minecraft/Folia through the work of
 our communities and incredibly talented minds. I do wish all of this was prevented and discussed privately, but there
