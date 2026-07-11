@@ -10,7 +10,7 @@ currently this document is primarily written by Dueris
 To start off, the images provided in this screenshot are of ages ago, of which have been resolved because we removed the
 related statement from our documentation. I cant really show proof that we discussed this since the discord got deleted
 though. It was originally discussed when a "Canvas shame fork" or whatever was created by the Luminol author,
-(Shiroha)[https://github.com/StarCodeClub/Shiroha]
+[Shiroha](https://github.com/StarCodeClub/Shiroha)
 
 You can also see in one of the comments I made(the bottom image), I meant nothing against Luminol in my comment, my
 comment was entirely saying I preferred Canvas over Luminol because Canvas has more fixes to offer than Luminol. That's
