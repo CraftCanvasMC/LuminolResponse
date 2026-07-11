@@ -26,7 +26,9 @@ not a mess of drama and competition. The image below to sorta prove that I wante
 
 ![img_3.png](img_3.png)
 
-As for the 2nd image in the "AboutCanvas" fork, I will say that those crashes I mentioned I was told from a trusted source
+As for the 2nd image in the "AboutCanvas" fork, I will say that those crashes I mentioned I was told from a trusted
+source, this is their response to when I asked to comment about the 2nd screenshot provided by the Luminol "AboutCanvas"
+repository.
 
 ![img_5.png](img_5.png)
 
@@ -45,11 +47,11 @@ up at eachother.
 ![img.png](img.png)
 ![img_1.png](img_1.png)
 
-As for this, I was personally unaware if it was copied or not, and to be blunt, I havent looked in depth regarding that
-and if it's a 1:1 copy. I recalled them having a patch that was similar to this, so I mentioned maybe doing something
-similar. Not saying to copy, not saying to do anything, just maybe we do this similar to what they did if it works well
-or something. Not meant as malicious competition or stealing or anything, just said "maybe something like this would be
-neat"
+As for this, I was personally unaware if it was copied directly or not. I recalled them having a patch that was similar
+to this, so I mentioned maybe doing something similar. Not saying to copy, not saying to do anything, just maybe we do
+this similar to what they did if it works well or something. Not meant as malicious competition or stealing or anything,
+just said "maybe something like this would be neat." I also think this isn't the greatest piece of evidence to support
+their claims, given this is from a contributor not a part of the Canvas team at the time of writing.
 
 # world load and unload api
 
