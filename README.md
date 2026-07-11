@@ -144,6 +144,16 @@ of writing it's kinda bleh, but it wasn't intentionally omitted, just an acciden
 
 Requesting the "immediate removal" of our repository for a dispute that could be settled DMs in 5 minutes is insane.
 
+To address a few comments in one of our issue reports discussing this:
+- Luminol did not reach out to Canvas at all actually, WE reached out to them. As evident by Shiroha. They reached out
+one maybbe 2 times(to the best of my knowledge at the time of writing this) in a PR regarding async protocol switch which
+was fixed later on and about a patch commit I did recently but I fixed that one a few hours later
+- I did acknowledge my mistakes and then fixed them ASAP. As evident by Shiroha
+- We do contain license notices for projects, which doesnt mean anything really, but it is more to show that we are trying
+to show that we are trying to make an effort at showcasing our origins for patches and our contributors. I simply forgot
+to include Luminol in there, which I dont think is a very hard thing to believe to be honest. Mistakes happen and I am
+a VERY forgetful person, so sometimes I forget to do it. But again, bring it up in DMs, and I fix it within a few hours
+
 # Closing
 
 At the time of writing Canvas' future I will say is completely unknown. The amount of drama surrounding Canvas is too
@@ -166,3 +176,10 @@ expectations on our team and contributors for licensing and patch origins to pre
 all is just a few honest mistakes made by imperfect people. We genuinely want to and care about showcasing our sources
 and our contributors and such, as we believe that it is the combined effort of the totality of a communnity that makes
 something great, not the standalone work of a few individuals.
+
+If you have questions or want more things addressed, contact us in our discord in the respective thread for it:
+https://canvasmc.io/discord
+https://discord.com/channels/1168986665038127205/1525543319424335943
+
+At the time of writing, Canvas' future will be decided soon. We will do a followup announcement about whether or not it
+dies and I will leave or not.
