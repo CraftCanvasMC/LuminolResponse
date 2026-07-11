@@ -1,0 +1,160 @@
+---- Minecraft Crash Report ----
+// On the bright side, I bought you a teddy bear!
+
+Time: 2026-06-27 21:36:11
+Description: Accessing LegacyRandomSource from multiple threads
+
+java.lang.IllegalStateException: Accessing LegacyRandomSource from multiple threads
+	at net.minecraft.util.ThreadingDetector.makeThreadingException(ThreadingDetector.java:77)
+	at net.minecraft.world.level.levelgen.LegacyRandomSource.next(LegacyRandomSource.java:45)
+	at net.minecraft.world.level.levelgen.BitRandomSource.nextInt(BitRandomSource.java:29)
+	at net.minecraft.world.entity.npc.wanderingtrader.WanderingTraderSpawner.tick(WanderingTraderSpawner.java:63)
+	at net.minecraft.server.level.ServerLevel.tickCustomSpawners(ServerLevel.java:1025)
+	at net.minecraft.server.level.ServerChunkCache.tickChunks(ServerChunkCache.java:605)
+	at net.minecraft.server.level.ServerChunkCache.tickChunks(ServerChunkCache.java:518)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:503)
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:905)
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1886)
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1681)
+	at net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:460)
+	at io.papermc.paper.threadedregions.TickRegions$ConcreteRegionTickHandle.tickRegion(TickRegions.java:519)
+	at io.papermc.paper.threadedregions.TickRegionScheduler$RegionScheduleHandle.runTick(TickRegionScheduler.java:524)
+	at io.canvasmc.canvas.tick.AffinitySchedulerThreadPool$TickThreadRunner.run(AffinitySchedulerThreadPool.java:625)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Folia Region Scheduler Thread #4
+Stacktrace:
+	at net.minecraft.util.ThreadingDetector.makeThreadingException(ThreadingDetector.java:77)
+	at net.minecraft.world.level.levelgen.LegacyRandomSource.next(LegacyRandomSource.java:45)
+	at net.minecraft.world.level.levelgen.BitRandomSource.nextInt(BitRandomSource.java:29)
+	at net.minecraft.world.entity.npc.wanderingtrader.WanderingTraderSpawner.tick(WanderingTraderSpawner.java:63)
+	at net.minecraft.server.level.ServerLevel.tickCustomSpawners(ServerLevel.java:1025)
+	at net.minecraft.server.level.ServerChunkCache.tickChunks(ServerChunkCache.java:605)
+	at net.minecraft.server.level.ServerChunkCache.tickChunks(ServerChunkCache.java:518)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:503)
+
+-- Thread dumps --
+Details:
+	Thread dumps: Folia Region Scheduler Thread #4: 
+	at java.base/java.lang.Thread.getStackTrace(Thread.java:2193)
+	at net.minecraft.util.ThreadingDetector.stackTrace(ThreadingDetector.java:85)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:723)
+	at net.minecraft.util.ThreadingDetector.makeThreadingException(ThreadingDetector.java:75)
+	at net.minecraft.world.level.levelgen.LegacyRandomSource.next(LegacyRandomSource.java:45)
+	at net.minecraft.world.level.levelgen.BitRandomSource.nextInt(BitRandomSource.java:29)
+	at net.minecraft.world.entity.npc.wanderingtrader.WanderingTraderSpawner.tick(WanderingTraderSpawner.java:63)
+	at net.minecraft.server.level.ServerLevel.tickCustomSpawners(ServerLevel.java:1025)
+	at net.minecraft.server.level.ServerChunkCache.tickChunks(ServerChunkCache.java:605)
+	at net.minecraft.server.level.ServerChunkCache.tickChunks(ServerChunkCache.java:518)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:503)
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:905)
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1886)
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1681)
+	at net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:460)
+	at io.papermc.paper.threadedregions.TickRegions$ConcreteRegionTickHandle.tickRegion(TickRegions.java:519)
+	at io.papermc.paper.threadedregions.TickRegionScheduler$RegionScheduleHandle.runTick(TickRegionScheduler.java:524)
+	at io.canvasmc.canvas.tick.AffinitySchedulerThreadPool$TickThreadRunner.run(AffinitySchedulerThreadPool.java:625)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Stacktrace:
+	at net.minecraft.util.ThreadingDetector.makeThreadingException(ThreadingDetector.java:77)
+	at net.minecraft.world.level.levelgen.LegacyRandomSource.next(LegacyRandomSource.java:45)
+	at net.minecraft.world.level.levelgen.BitRandomSource.nextInt(BitRandomSource.java:29)
+	at net.minecraft.world.entity.npc.wanderingtrader.WanderingTraderSpawner.tick(WanderingTraderSpawner.java:63)
+	at net.minecraft.server.level.ServerLevel.tickCustomSpawners(ServerLevel.java:1025)
+	at net.minecraft.server.level.ServerChunkCache.tickChunks(ServerChunkCache.java:605)
+	at net.minecraft.server.level.ServerChunkCache.tickChunks(ServerChunkCache.java:518)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:503)
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:905)
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1886)
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1681)
+	at net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:460)
+	at io.papermc.paper.threadedregions.TickRegions$ConcreteRegionTickHandle.tickRegion(TickRegions.java:519)
+	at io.papermc.paper.threadedregions.TickRegionScheduler$RegionScheduleHandle.runTick(TickRegionScheduler.java:524)
+	at io.canvasmc.canvas.tick.AffinitySchedulerThreadPool$TickThreadRunner.run(AffinitySchedulerThreadPool.java:625)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+-- Affected level --
+Details:
+	// WORLD DETAILS OMITTED
+Stacktrace:
+	at net.minecraft.server.level.ServerLevel.fillReportDetails(ServerLevel.java:2905)
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1889)
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1681)
+	at net.minecraft.server.dedicated.DedicatedServer.tickServer(DedicatedServer.java:460)
+	at io.papermc.paper.threadedregions.TickRegions$ConcreteRegionTickHandle.tickRegion(TickRegions.java:519)
+	at io.papermc.paper.threadedregions.TickRegionScheduler$RegionScheduleHandle.runTick(TickRegionScheduler.java:524)
+	at io.canvasmc.canvas.tick.AffinitySchedulerThreadPool$TickThreadRunner.run(AffinitySchedulerThreadPool.java:625)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+-- Affected level --
+Details:
+	// WORLD DETAILS OMITTED
+
+-- Region Context --
+Details:
+	Executing Tasks: false
+	RegionScheduleHandle: ThreadedRegion{state=2,sectionCount=196/*REGION SECTION DETAILS OMITTED*/}
+
+-- System Details --
+Details:
+	Minecraft Version: 26.1.2
+	Minecraft Version ID: 26.1.2
+	Operating System: Linux (amd64) version 5.14.0-570.37.1.el9_6.x86_64
+	Java Version: 25.0.3, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 21460130232 bytes (20465 MiB) / 34359738368 bytes (32768 MiB) up to 34359738368 bytes (32768 MiB)
+	Memory (heap): init: 32768MiB, used: 12286MiB, committed: 32768MiB, max: 32768MiB
+	Memory (non-head): init: 007MiB, used: 553MiB, committed: 587MiB, max: 000MiB
+	CPUs: 32
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 9 9950X 16-Core Processor
+	Identifier: AuthenticAMD Family 26 Model 68 Stepping 0
+	Microarchitecture: unknown
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 16
+	Number of logical CPUs: 32
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 75229.50
+	Virtual memory used (MiB): 86374.05
+	Swap memory total (MiB): 12287.99
+	Swap memory used (MiB): 406.17
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 994.54, total: 1000.00
+	Space in storage for workdir (MiB): available: 163921.34, total: 1870976.50
+	JVM Flags: 20 total; -Xms32G -Xmx32G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1
+	Debug Flags: 0 total; 
+	CraftBukkit Information: 
+   BrandInfo: Canvas (canvasmc:canvas) version 26.1.2-825-HEAD@0219586 (2026-06-20T10:31:57Z)
+   Running: Canvas version 26.1.2-825-0219586 (MC: 26.1.2) (Implementing API version 26.1.2.build.825-stable) false
+   Warnings: DEFAULT
+   Reload Count: 0   
+   Force Loaded Chunks: { minecraft:overworld: {}, minecraft:the_nether: {}, minecraft:the_end: {}, minecraft:spawn: {}, minecraft:afk: {},}
+	Server Running: true
+	// PLAYERS OMITTED
+	Active Data Packs: vanilla, paper, file/bukkit
+	Available Data Packs: file/bukkit, minecart_improvements, paper, redstone_experiments, trade_rebalance, vanilla
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	// SEED OMITTED
+	Suppressed Exceptions: ~~NONE~~
+	Is Modded: Definitely; Server brand changed to 'Canvas'
+	Type: Dedicated Server

@@ -76,3 +76,93 @@ blowing all of this up.
 
 As for https://github.com/kennytv/list-of-shame/issues/108, this was already known by me but is VERY outdated now, why
 this was brought up, no clue. But this is irrelevant as of later versions of Canvas.
+
+# Our response to the whole thing
+
+The rest of this is just a yap session from Dueris. TLDR, Im angry, this is frustrating, the rest of this just goes in
+depth as to why and what and stuff.
+
+To start off, Im incredibly angry. To give backstory, the [Shiroha](https://github.com/StarCodeClub/Shiroha) repository
+is a repository made by the maintainer of Luminol, MrHua269. This was initially created as a fork to protest Canvas of
+sorts for previous mistakes it made. When I discovered this, I reached out and wanted to discuss it because frankly,
+that sort of stuff is just inappropriate. If you have an issue with someone, say it to their face and resolve the
+situation maturely. After our discussion, the part regarding Canvas was removed in this commit:
+
+https://github.com/StarCodeClub/Shiroha/commit/3681281089b90e8cf5cd4fe2cff1df11a1cf42e3
+
+After this, all issues, at least to my knowledge were resolved, and any further issues would be discussed privately with
+eachother to prevent us pointing fingers and turning people against eachother. *Clearly* that was not what happened.
+
+The DMCA takedown I think pissed me off and upset me the most.
+
+![img_6.png](img_6.png)
+
+According to the SS, this was made **June 8th.** This is completely insane, especially when this can be resolved with
+just sending me a fucking DM asking me to fix a few comments. But OK!
+
+Canvas has made continuous attempts at being transparent about our patches and our sources. You can even see in our
+`src/main/resources` directory of `canvas-server` at the time of writing that we include various licenses inside there
+to try and be more transparent about our sources. While this maybe isnt quite what's needed, Im mentioning it as proof
+that we are genuinely trying to make an effort to be good and transparent regarding this. We have constantly showed we
+are wanting to value the work of our contributors and sources of patches and *very* willing to credit it if we make a
+mistake along the way.
+
+As for the "MALICIOUS copyright infringements" mentioned here:
+
+![img_7.png](img_7.png)
+
+I actually have the crash report, provided by JackpotMC who runs Canvas, which happened June 27th and provided the same
+day. This is of our dev GC that also showcases that I indeed, did not know about Luminols changes at the time of writing
+my fix. Infact, *both* Luminols and Canvas' patch launched on the same day, June 30th. The crash report, has parts
+omitted as to protect the privacy of JackpotMC.
+
+![img_9.png](img_8.png)
+![img_9.png](img_9.png)
+
+The fact it's being labeled as "malicious" is outright insanity. We have no malicious intent, no desire to start drama,
+no desire to create competition, no desire to steal at all, nothing. I do this for my love of programming and Minecraft.
+This is a stupid amount of drama for something that can be solved by asking politely to please fix a fuckign mistake I
+made ages ago for like tiny patches that are insignificant in the full context of Canvas' full patch set. I am human, I
+will make mistakes and HAVE made mistakes. Some improper annotations are simply because sometimes when authoring or
+updating I apply the patch by hand, and out of habit do `// Canvas` comments or something. I literally did that in a
+Paper PR once(no clue if it's still able to be found but whatever) by accident.
+
+In their DMCA takedown notice they claimed Canvas' copyright infringements were "explicit and severe", of which this
+is really not the case. "Severe" is a strong word to use when the related patches are miniscule in comparison to the
+full patch set Canvas provides, outside of the core region threading patch from Folia. "Explicit" also implies this was
+intentional, which it wasn't. And again, this could all be solved by DMing us like we asked them to after they made a
+fucking "protest fork". When we discussed with them the issues they brought up were fixed within HOURS of that discussion,
+some made in the moment of that discussion. I cant provide screenshots though, because the discord is gone. We are not
+trying to remove people from credit of their work or time, we have put CONSTANT efforts to showcase the work of our
+community and even include the contributors of our project alongside the authors of CanvasMC in our version command to
+try and showcase recognition for those people. This is simply at most a mistake and not deserving of any of this sort
+of insanity that was unleashed.
+
+They also claim that our README deliberately omits Luminol as a source, and that our license "claims ownership over
+Luminol-derived patches", which is not true. The README is something on our internal TODO to update because at the time
+of writing it's kinda bleh, but it wasn't intentionally omitted, just an accident where we forgot to add them...
+
+Requesting the "immediate removal" of our repository for a dispute that could be settled DMs in 5 minutes is insane.
+
+# Closing
+
+At the time of writing Canvas' future I will say is completely unknown. The amount of drama surrounding Canvas is too
+much for me and to be blunt, may result in my leave of the community and the immediate removal of Canvas from github.
+There is no guarantee for it happening or not, however this whole ordeal is completely unacceptable and out of line and
+I will prioritize myself over Canvas, and if that means it's better for my mental health to delete Canvas, I will.
+
+This is a deeply frustrating situation and one I will be investigating more over the next few hours at the time of
+writing this. There was no malicious intent by Canvas, only honest mistakes made by imperfect people who are just trying
+to do better. We already are working on fixing any valid claims against Canvas in our patch sources, as we seriously did
+not steal anything from anyone, and did not mean any malicious intent by anything. It's small things that were blown so
+heavily out of porportion that it resulted in 2 communities at eachothers throats for something that could be settled
+privately within an hour.
+
+On behalf of the CanvasMC team, we are genuinely sad to see Luminol leave. We meant no competition with them, I dont
+want competition with anyone. We all have the same goal, to optimize and stabilize Minecraft/Folia through the work of
+our communities and incredibly talented minds. I do wish all of this was prevented and discussed privately, but there
+isnt much we can do about that now. We at CanvasMC, if I decide to let Canvas live, will enforce stricter rules and
+expectations on our team and contributors for licensing and patch origins to prevent issues like this in the future. This
+all is just a few honest mistakes made by imperfect people. We genuinely want to and care about showcasing our sources
+and our contributors and such, as we believe that it is the combined effort of the totality of a communnity that makes
+something great, not the standalone work of a few individuals.
