@@ -168,6 +168,16 @@ not steal anything from anyone, and did not mean any malicious intent by anythin
 heavily out of porportion that it resulted in 2 communities at eachothers throats for something that could be settled
 privately within an hour.
 
+You cant copyright an idea, both Luminol and Canvas have similar projects with the same end goal of stabilizing Folia
+to the best of our abilities. We have similar code, yes, like the JackpotMC crash for example. Does that mean we are
+maliciously trying to compete with them or are plagerizing things and intentionally cause harm? Absolutely not. We are
+bound to have similar code, we are similar projects. We have always been very vocal about trying to be on good relations
+with Luminol and trying to do our best and do better about patch origins and proper crediting of contributors and other
+patch sources. No prior attempts were made to contact the Canvas team or myself. Instead, every time Luminol was upset
+regarding something Canvas did, they did not make any attempts to contact us and instead went to extremes. This whole
+situation is frankly, childish. This should have been handled maturely like adults privately in DMs, not throwing 2
+communities against eachother and then ghosting the internet.
+
 Proof we are already doing things to fix:
 
 - https://github.com/CraftCanvasMC/Canvas/pull/288
