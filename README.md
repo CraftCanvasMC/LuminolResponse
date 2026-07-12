@@ -1,7 +1,18 @@
 # luminol response
 
-this is just a page discussing the entirety of what luminol has brought up, and our response
-currently this document is primarily written by Dueris
+This page is made to document and bring CanvasMCs side of the recent controversy regarding LuminolMC and CanvasMC,
+specifically going over claims that were made by Luminol about Canvas and our thoughts regarding it. If you have
+questions post reading the totality of this document, feel free to reach out in discord here:
+
+https://canvasmc.io/discord
+https://discord.com/channels/1168986665038127205/1525543319424335943
+
+This response goes in depth into multiple claims Luminol made, our thoughts, and overall our response to the actions
+of the developers of Luminol. To see Luminols side, see here:
+
+https://github.com/LuminolMC/AboutCanvas
+
+Fair warning, this is a bit all over the place, so apologies in advance.
 
 # AboutCanvas response
 
@@ -200,5 +211,24 @@ If you have questions or want more things addressed, contact us in our discord i
 https://canvasmc.io/discord
 https://discord.com/channels/1168986665038127205/1525543319424335943
 
-At the time of writing, Canvas' future will be decided soon. We will do a followup announcement about whether or not it
-dies and I will leave or not.
+# closing thoughts
+
+My(Dueris) stance on all of this is mostly that I am disappointed. What could have been resolved in DMs in a few hours
+turned into a mess of drama throwing 2 communities at each others throats. While yes, I have made mistakes and I am
+imperfect. I will admit, I have made mistakes, and I will continue to make mistakes probably as that is human nature.
+That does not mean though that I am unwilling to fix these mistakes. Already, within hours of the initial post from
+Luminol being up, we have fixed the main issues that were addressed, only being delayed by the drama that was created
+from the post.
+
+I will be taking a break from the internet as to try and calm down and decide what to do next and how I want to go about
+it all. I am hoping that this will die down eventually. If you have questions, feel free to ask them, I am happy to
+answer any questions people may have or clarify information. There was no malintent by anything, and it is my hope that
+this document helps clarify information and bring truths to light. We still seek good terms with Luminol, and we will
+always continue trying to do better and do the best we can to properly attribute our patches, credit patch sources and
+authors, etc. We at Canvas have no intent or desire to cause harm to anyone, or cause further drama, or to discredit
+people or plagerize anyone, etc. We wish the developers of Luminol the best, and hope someday this dispute is calmed
+down, and we all move on, and it becomes a thing of the past. We will only continue to try and do our best.
+
+Thank you for reading
+
+\- Dueris, owner of CanvasMC
