@@ -193,6 +193,7 @@ Proof we are already doing things to fix:
 
 - https://github.com/CraftCanvasMC/Canvas/pull/288
 - https://github.com/CraftCanvasMC/Canvas/commit/3b5289569fb6ad84752acc7622f655cb538be5d0
+- https://github.com/CraftCanvasMC/Canvas/commit/387cfe726e7e8932f517d17e35b6299b6269cecf
 
 I think it's worth noting this was merged within like 20 minutes of this repo being public... I think that sorta shows
 that we are very willing to fix these issues. A more in-depth review will be conducted later, but at the time of writing
